@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="header-nav-wrapper">
+          <h1 class="primary-heading">Product Management</h1>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="primary" role="list" class="nav-list">
+              <li><a href="#">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+          <div class="mobile-nav-toggle">
+            <i class="bx bx-menu icon-hamburger"></i>
+            <i class="bx bx-x icon-close"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-nav-wrapper">
+        <nav class="mobile-nav">
+          <a href="index.html"><li>Login</li></a>
+          <a href="register.html"><li>Register</li></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="response-message" id="response-message" style="display: none">
+        <div class="response-text">
+          <p>Dummy Text</p>
+          <a id="message-cross" style="cursor: pointer">
+            <i class="fa fa-times" style="font-size: 1.5rem; height: 1.5rem"></i>
+          </a>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="login">
+          <div class="text-center mt-4">
+            <h1 class="heading">Welcome back!</h1>
+            <p class="login-text">Login to your account to continue</p>
+          </div>
+          <div class="card">
+            <form action="" id="login-form" class="login-form" method="post">
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" />
+                <p class="error email-error"></p>
+              </div>
+              <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" />
+                <p class="error password-error"></p>
+              </div>
+              <div class="remember-control">
+                <input type="checkbox" class="checkbox" id="remember" name="remember" />
+                <label for="remember" class="checkbox-label"> Remember me </label>
+              </div>
+              <div>
+                <button type="submit" class="form-button">Login</button>
+              </div>
+            </form>
+          </div>
+          <div class="no-account text-center mt-4">
+            <p>
+              Don't have an account?
+              <a href="register.html" class="">Register</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/login.js" type="module"></script>
+  </body>
+</html>
